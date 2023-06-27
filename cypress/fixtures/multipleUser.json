@@ -1,0 +1,14 @@
+[
+    {
+        "firstName": "amruta",
+        "lastName": "Pawar",
+        "email": "pawaramruta12@gmail.com",
+        "message": "I am learning js"
+      },
+      {
+        "firstName": "Dhanvi",
+        "lastName": "Bangal",
+        "email": "dhanvibangal@gmail.com",
+        "message": "I am learning js"
+      }
+]
