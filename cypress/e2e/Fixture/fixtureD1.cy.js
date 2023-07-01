@@ -19,8 +19,6 @@ describe('verify the contact us form',  () =>{
         cy.fixture('multipleUser').then( function(users){
             this.users = users
         })
-
-
     })
 
     it.skip('verify the contact us form',  ()=> {
@@ -56,7 +54,7 @@ describe('verify the contact us form',  () =>{
     })
 
 
-    it.skip('verify the contact us form - before',  function() {
+    it('verify the contact us form - before',  function() {
         cy.visit('http://www.webdriveruniversity.com/Contact-Us/contactus.html')
         cy.get('input[name="first_name"]').type(this.data.firstName)
         cy.get('input[name="last_name"]').type(this.data.lastName)
@@ -64,10 +62,9 @@ describe('verify the contact us form',  () =>{
         cy.get('textarea[name="message"]').type(this.data.message)
         cy.get('input[type="submit"]').click()
         cy.get('h1').should('have.text', 'Thank You for your Message!')
-
     })
 
-    it('verify the contact us form - multiuser incorrect way',  function() {
+    it.skip('verify the contact us form - multiuser incorrect way',  function() {
          cy.log(this.users)
         this.users.forEach(function (el) {
             cy.visit('http://www.webdriveruniversity.com/Contact-Us/contactus.html')
@@ -77,9 +74,7 @@ describe('verify the contact us form',  () =>{
             cy.get('textarea[name="message"]').type(el.message)
             cy.get('input[type="submit"]').click()
             cy.get('h1').should('have.text', 'Thank You for your Message!')
-
         })
-
     })
 
     users.forEach(function (el, index) {
@@ -92,7 +87,5 @@ describe('verify the contact us form',  () =>{
             cy.get('input[type="submit"]').click()
             cy.get('h1').should('have.text', 'Thank You for your Message!')
         })
-
     })
-
 })
