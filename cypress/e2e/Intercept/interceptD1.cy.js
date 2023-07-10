@@ -47,7 +47,8 @@ describe('verify the functionality using intercept', () => {
     })
 
     it.only('verify the get api and ui response', function () {
-        cy.intercept({
+        cy.intercept(
+            {
             method: "GET",
             url: "https://jsonplaceholder.cypress.io/comments/1",
         },
