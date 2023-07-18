@@ -2,7 +2,7 @@
 
 import data from'../../fixtures/multipleUser.json'
 
-describe('verify the functionality of ficture', () => {
+describe('verify the functionality of fixture', () => {
     let obj = {
         firstName: "Kalyani",
         lastName: "Hadole",
@@ -52,7 +52,7 @@ describe('verify the functionality of ficture', () => {
         })
     })
 
-    it('access the fixture data from ficture folder-before', function() {
+    it('access the fixture data from fixture folder-before', function() {
            cy.visit('http://www.webdriveruniversity.com/Contact-Us/contactus.html')
             cy.get('input[name="first_name"]').type(this.obj.firstName)
             cy.get('input[name="last_name"]').type(this.obj.lastName)
