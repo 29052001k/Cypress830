@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^12.11.0",
+    "cypress-real-events": "^1.10.0",
     "npx": "^10.2.2"
   }
 }
