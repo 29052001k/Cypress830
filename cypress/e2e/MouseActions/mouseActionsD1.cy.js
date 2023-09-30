@@ -1,6 +1,6 @@
 ///<reference types='cypress'/>
 describe('Mouse Actions', () => {
-    /*1 for the left mouse button
+/*1 for the left mouse button
 2 for the middle mouse button
 3 for the right mouse button*/
     it.skip('double click ', () => {

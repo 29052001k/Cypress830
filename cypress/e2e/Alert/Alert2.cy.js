@@ -30,7 +30,7 @@ describe('js alerts', () => {
     it('confirm alert click on cancel button', () => {
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.window().then((window) => {
-            cy.stub(window, 'prompt').returns('I clicked on Prompt button 4564654564 4545645646547654')
+            cy.stub(window, 'prompt').returns('I clicked on Prompt button')
             cy.get('[onclick="jsPrompt()"]').click()
         })
     })
